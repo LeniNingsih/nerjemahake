@@ -1,3 +1,2 @@
 OpenNMT-py
 streamlit
-flask
