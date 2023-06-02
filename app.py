@@ -14,7 +14,7 @@ def translate(source_text):
         f.write(source_text)
 
     # menjalankan kode untuk menerjemahkan
-    @st.cache
+    @st.cache_data
     command = "onmt_translate -model data/model_step_2000.pt -src data/source.txt -output data/pred.txt"
     subprocess.run(command)
 
